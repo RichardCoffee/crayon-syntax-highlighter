@@ -130,7 +130,7 @@ class CrayonFormatter {
             }
         } else if (!$hl->is_inline()) {
             if (($font_size = CrayonGlobalSettings::get(CrayonSettings::FONT_SIZE)) !== FALSE) {
-                $_font_size = $font_size->def() . 'px !important;';
+                $_font_size = $font_size->def();
                 $line_height = ($_font_size * 1.4) . 'px !important;';
             }
         }
